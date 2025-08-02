@@ -11,7 +11,7 @@ import {
 const AiInputCard: React.FC = () => {
   return (
     <div className="mx-auto w-full max-w-4xl rounded-[24px] border p-2 shadow-sm md:rounded-t-[44px]">
-      <div className="relative mx-auto flex w-full bg-blue-50 flex-col rounded-[24px] border p-2 shadow-sm md:items-start md:gap-8 md:rounded-b-[20px] md:rounded-t-[40px] md:p-2">
+      <div className="relative mx-auto flex w-full  flex-col rounded-[24px] border p-2 shadow-sm md:items-start md:gap-8 md:rounded-b-[20px] md:rounded-t-[40px] md:p-2">
         
         {/* Badge */}
         <div className="inline-flex items-center px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground absolute left-4 top-6 rounded-[14px] border  text-base md:left-6">
@@ -38,7 +38,7 @@ const AiInputCard: React.FC = () => {
         <div className="flex w-full items-center justify-center gap-4">
           <div className="w-full py-4">
             <div className="relative max-w-xl border rounded-[22px]  p-1 w-full mx-auto">
-              <div className="relative rounded-2xl border bg-gray-300 flex flex-col">
+              <div className="relative rounded-2xl border  flex flex-col">
                 
                 {/* Textarea */}
                 <div className="overflow-y-auto max-h-[164px]">
