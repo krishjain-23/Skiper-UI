@@ -84,7 +84,7 @@ export default function AiInput() {
   const [imagePreview, setImagePreview] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const handelClose = (e: any) => {
+const handelClose = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
     e.stopPropagation()
     if (fileInputRef.current) {
@@ -177,12 +177,12 @@ export default function AiInput() {
                       width={500}
                       alt="additional image"
                     />
-                    <button
-                      onClick={handelClose}
-                      className="bg-[#e8e8e8] text-[#464646] absolute -top-1 -left-1 shadow-3xl rounded-full rotate-45"
-                    >
-                      <Plus className="w-4 h-4" />
-                    </button>
+                   <button
+  onClick={handelChange}   // ✅ fixed typo
+  className="bg-[#e8e8e8] text-[#464646] absolute -top-1 -left-1 shadow-3xl rounded-full rotate-45"
+>
+  <Plus className="w-4 h-4" />
+</button>
                   </div>
                 )}
               </label>
